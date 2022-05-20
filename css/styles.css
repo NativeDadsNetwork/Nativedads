@@ -60,6 +60,12 @@
   width: 100%;
   margin-right: 0;
 }
+.team{
+  color: white !important;
+}
+.team:hover{
+  color: rgb(216, 138, 65) !important;
+}
 
 
 /* loader */
