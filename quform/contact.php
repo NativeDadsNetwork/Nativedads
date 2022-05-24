@@ -39,7 +39,7 @@ $config['email'] = true;
  *     'recipient2@example.com'
  * );
  */
-$config['recipients'] = 'addyour@emailhere';
+$config['recipients'] = 'isaachollowhorn@gmail.com';
 
 /**
  * Set the "From" address of the emails. You should set this to the contact
@@ -59,7 +59,7 @@ $config['recipients'] = 'addyour@emailhere';
  *
  * $config['from'] = '%email%';
  */
-$config['from'] = 'addyour@emailhere';
+$config['from'] = 'isaachollowhorn@gmail.com';
 
 /**
  * The subject of the notification email message. %name% will be replaced
