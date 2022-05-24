@@ -120,7 +120,7 @@ $config['autoreplyBody'] = '/emails/autoreply.php';
  *
  * $config['redirect'] = 'http://www.example.com/thanks.html';
  */
-$config['redirect'] = '';
+$config['redirect'] = 'https://ndnsite.netlify.app/index.html';
 
 /**
  * Whether or not to save the form data to a database. true or false
@@ -251,7 +251,7 @@ function process(Quform $form, array &$config)
     // Process the form
     if ($form->isValid($_POST)) {
         // Custom code section #1 - see documentation for examples
-
+        $mailTo = 'isaachollowhorn@gmail.com'
         // End custom code section #1
 
         try {
