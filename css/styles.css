@@ -67,6 +67,35 @@
   color: rgb(216, 138, 65) !important;
 }
 
+.fb:hover{
+  background-color: rgb(12,134,238)!important;
+}
+.youtube:hover{
+  background-color: #FF0000!important;
+}
+#albert{
+  width: 81%;
+  margin-left: 10%;
+}
+#drart{
+  justify-content: center;
+}
+.drart{
+  margin: 0 0 10% 15% ;
+}
+#drart1{
+  max-width: 1500px;
+}
+#drart2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 1199px) {
+  .drart{
+    margin-left: 0;
+  }
+}
 
 /* loader */
 #preloader {
@@ -408,7 +437,7 @@ input[type=radio] {
       transition-duration: .3s;
       padding: 0 3px; }
       .top-social-icon li a:hover {
-        color: #3642a8; }
+        color: rgb(12,134,238); }
 
 /* menu area light */
 .navbar-nav li.current > a, .navbar-nav li.active > a {
