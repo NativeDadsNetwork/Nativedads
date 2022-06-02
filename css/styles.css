@@ -44,6 +44,9 @@
   background-position:top !important;
   background-repeat: no-repeat !important;
 }
+.mb-0{
+  color: white;
+}
 #smudge{
   height: 40rem;
   background-position: bottom !important;
@@ -79,9 +82,11 @@
 }
 #drart{
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .drart{
-  margin: 0 0 10% 15% ;
+  margin: 0 0 10% 10% ;
+  width: 70%;
 }
 #drart1{
   max-width: 1500px;
@@ -90,11 +95,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 50%;
+  margin: 0 8% 0 0;
 }
 @media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 860px) {
+  #drart2{
+    width: auto;
+  }
   .drart{
     margin-left: 0;
+    width: auto;
   }
+}
+.tribalbg{
+  background-image: url("tribaldesign.jpg");
+}
+.tribalbg:after { 
+  background: #000; 
 }
 
 /* loader */
