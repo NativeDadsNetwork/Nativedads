@@ -85,7 +85,7 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .drart{
-  margin: 0 0 10% 10% ;
+  margin: 0 0 10% 16.5% ;
   width: 70%;
 }
 #drart1{
@@ -96,7 +96,6 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 50%;
-  margin: 0 8% 0 0;
 }
 @media screen and (max-width: 1199px) {
 
