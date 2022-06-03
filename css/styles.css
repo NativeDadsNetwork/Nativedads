@@ -133,6 +133,9 @@
 .transparent{
   background-color: rgba(255, 255, 255, .8)!important;
 }
+.testBox{
+  padding: 2% 0 0 8%;
+}
 
 @media screen and (max-width: 1199px) {
   #drart, .testimonialIssue{
@@ -968,7 +971,7 @@ input[type=radio] {
     max-height: 100%;
     width: 100%;
     opacity: 0;
-    background: rgba(255, 172, 0, 0.78);
+    background: rgba(255, 0, 0, 0.78);
     padding: 3%;
     -webkit-transition-duration: .8s;
     transition-duration: .8s; }
