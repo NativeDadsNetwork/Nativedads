@@ -44,7 +44,7 @@
   background-position:top !important;
   background-repeat: no-repeat !important;
 }
-.mb-0{
+.whiteColor{
   color: white;
 }
 #smudge{
@@ -80,9 +80,18 @@
   width: 81%;
   margin-left: 10%;
 }
+.bio-heading{
+  padding-top: 10%;
+}
 #drart{
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
+  padding: 10% 0;
+}
+.testimonialIssue{
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2%;
 }
 .drart{
   margin: 0 0 10% 16.5% ;
@@ -96,10 +105,24 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 50%;
-  padding-top: 5%;
+}
+.tribalbg{
+  background-image: url("tribaldesign.jpg");
+}
+.tribalbg:after { 
+  background: #000; 
+}
+.marginTest{
+  margin-bottom: 15%;
+  padding-top: 10%;
+}
+.paddingTest{
+  padding: 0 0 10% 5%
 }
 @media screen and (max-width: 1199px) {
-
+  #drart, .testimonialIssue{
+    border-radius: 0;
+  }
 }
 @media screen and (max-width: 860px) {
   #drart2{
@@ -110,11 +133,13 @@
     width: auto;
   }
 }
-.tribalbg{
-  background-image: url("tribaldesign.jpg");
-}
-.tribalbg:after { 
-  background: #000; 
+@media screen and (max-width: 645px) {
+  .paddingTest{
+    padding: 0;
+  }
+  iframe{
+    width: 100%;
+  }
 }
 
 /* loader */

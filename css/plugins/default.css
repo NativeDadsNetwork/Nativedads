@@ -1719,7 +1719,7 @@ section.md { padding: 90px 0; }
 .w-80 {width:80%;}
 .w-85 {width:85%;}
 .w-90 {width:90%;}
-.w-95 {width:95%;color: white;}
+.w-95 {width:95%;color: white;font-size: 1.3rem;}
 .w-100 {width:100%;}
 .w-auto {width: auto;}
 
@@ -6089,6 +6089,9 @@ section.md { padding: 90px 0; }
     }
     .ps-xl-8, .px-xl-8 {
         padding-left: 4.5rem;
+    }
+    .ps-xl-8{
+        padding-left: 0;
     }
     .ps-xl-9, .px-xl-9 {
         padding-left: 5rem;
