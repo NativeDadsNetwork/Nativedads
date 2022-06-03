@@ -137,10 +137,14 @@
   padding: 2% 0 0 8%;
 }
 
+
 @media screen and (max-width: 1199px) {
   #drart, .testimonialIssue{
     border-radius: 0;
   }
+}
+@media screen and (max-width: 990px) {
+
 }
 @media screen and (max-width: 860px) {
   #drart2{
@@ -233,7 +237,7 @@ a:hover, a:active {
   background-color: #000000 !important; }
 
 .bg-secondary {
-  background-color: rgba(146, 5, 5, 0.7)!important; }
+  background-color: rgb(175, 51, 51)!important; }
 
 .primary-overlay[data-overlay-dark]:before {
   background: #a8a036; }
