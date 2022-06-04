@@ -41,6 +41,13 @@
   position: relative !important;
   background-size: cover !important;
   overflow: hidden !important;
+  background-position:center !important;
+  background-repeat: no-repeat !important;
+}
+#bwbCover {
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
   background-position:top !important;
   background-repeat: no-repeat !important;
 }
