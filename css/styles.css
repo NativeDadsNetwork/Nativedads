@@ -51,23 +51,38 @@
   background-position:top !important;
   background-repeat: no-repeat !important;
 }
+.teamBackground{
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  height: 47rem;
+}
+.backgroundCover{
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position:bottom !important;
+  background-repeat: no-repeat !important;
+  height: 32rem;
+}
+.albertCover{
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position:center !important;
+  background-repeat: no-repeat !important;
+  height: 40rem;
+}
 .whiteColor{
   color: white;
 }
 .grayColor{
   color: rgb(160, 160, 160);
 }
-#smudge{
-  height: 40rem;
-  background-position: bottom !important;
-}
 #imgOne{
   background-position:center !important
-}
-@media screen and (max-width: 991px){
-  #smudge{
-    height: auto;
-  }
 }
 #mikeD{
   width: 100%;
@@ -151,7 +166,9 @@
   }
 }
 @media screen and (max-width: 990px) {
-
+  .teamBackground, .backgroundCover, .albertCover{
+    height: 20rem;
+  }
 }
 @media screen and (max-width: 860px) {
   #drart2{
