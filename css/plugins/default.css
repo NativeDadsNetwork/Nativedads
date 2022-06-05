@@ -1504,7 +1504,7 @@ section.md { padding: 90px 0; }
 
 .top-5 { top: 5%; bottom: inherit; }
 .top-10 { top: 10%; bottom: inherit; }
-.top-15 { top: -5%; bottom: inherit; }
+.top-15 { top: 8%; bottom: inherit; }
 .top-20 { top: 20%; bottom: inherit; }
 .top-25 { top: 25%; bottom: inherit; }
 .top-30 { top: 30%; bottom: inherit; }
@@ -1516,7 +1516,7 @@ section.md { padding: 90px 0; }
 .top-60 { top: 60%; bottom: inherit; }
 .top-65 { top: 65%; bottom: inherit; }
 .top-70 { top: 70%; bottom: inherit; }
-.top-75 { top: 75%; bottom: inherit; }
+.top-75 { top: 73%; bottom: inherit; }
 .top-80 { top: 80%; bottom: inherit; }
 .top-85 { top: 85%; bottom: inherit; }
 .top-90 { top: 90%; bottom: inherit; }
@@ -1586,7 +1586,7 @@ section.md { padding: 90px 0; }
 .bottom-n95 { bottom: -95%; top: inherit; }
 .bottom-n100 { bottom: -100%; top: inherit; }
 
-.left-5 { left: -13%; right: inherit; }
+.left-5 { left: 3%; width: 18%; right: inherit; }
 .left-10 { left: 10%; right: inherit; }
 .left-15 { left: 15%; right: inherit; }
 .left-20 { left: 20%; right: inherit; }
@@ -1628,7 +1628,7 @@ section.md { padding: 90px 0; }
 .left-n95 { left: -95%; right: inherit; }
 .left-n100 { left: -100%; right: inherit; }
 
-.right-5 { right: 5%; left: inherit; }
+.right-5 { right: 5%; width: 18%; left: inherit; }
 .right-10 { right: 10%; left: inherit; }
 .right-15 { right: 15%; left: inherit; }
 .right-20 { right: 20%; left: inherit; }
