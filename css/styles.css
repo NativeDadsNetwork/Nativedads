@@ -55,6 +55,14 @@
   position: relative !important;
   background-size: cover !important;
   overflow: hidden !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: 45rem;
+}
+.teamBackground1{
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
   background-position: top !important;
   background-repeat: no-repeat !important;
   height: 45rem;
