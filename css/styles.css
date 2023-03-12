@@ -43,6 +43,7 @@
   overflow: hidden !important;
   background-position:center !important;
   background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 #bwbCover {
   position: relative !important;
@@ -55,7 +56,7 @@
   position: relative !important;
   background-size: cover !important;
   overflow: hidden !important;
-  background-position: center !important;
+  background-position: top !important;
   background-repeat: no-repeat !important;
   height: 45rem;
 }
@@ -82,6 +83,14 @@
   background-position:center !important;
   background-repeat: no-repeat !important;
   height: 40rem;
+}
+.maryCover{
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  height: 50rem;
 }
 .whiteColor{
   color: white;
@@ -120,6 +129,11 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2%;
+  padding: 10% 0;
+}
+#drart1{
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10% 0;
 }
 .testimonialIssue{
@@ -174,7 +188,7 @@
   }
 }
 @media screen and (max-width: 990px) {
-  .teamBackground, .backgroundCover, .albertCover{
+  .teamBackground, .teamBackground1, .backgroundCover, .albertCover, .maryCover{
     height: 20rem;
   }
 }
