@@ -45,6 +45,13 @@
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
+.cover-background1 {
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position:center !important;
+  background-repeat: no-repeat !important;
+}
 #bwbCover {
   position: relative !important;
   background-size: cover !important;
