@@ -216,7 +216,7 @@
     width: 100%;
   }
   .cover-background{
-    background-attachment: local;
+    background-attachment: scroll;
   }
 }
 
