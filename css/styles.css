@@ -163,10 +163,11 @@
 .tribalbg{
   top: 50%;
   z-index: 1;
+  /* background: url("../img/bg/blackred.avif") repeat center center; */
+  /* background: url("../img/bg/redorangetribal.jpg") repeat center center; */
   background: url("tribaldesign.jpg") repeat center center;
   position: absolute;
   width: 100%;
-  
 }
 .tribalbg:after { 
   background: #000; 
@@ -632,6 +633,7 @@ input[type=radio] {
   position: absolute;
   top: 50%;
   z-index: 1;
+  /* background: url("../img/bg/redorangetribal.jpg") repeat center center; */
   background: #3642a8 url(tribaldesign.jpg) repeat center center;
   height: 80%;
   content: "";
