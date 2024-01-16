@@ -35,6 +35,8 @@
     <!-- custom style css -->
     <link href="css/custom.css" rel="stylesheet" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -96,71 +98,8 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="menu_area">
-                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light p-0">
 
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- logo -->
-                                        <a href="index.html" class="navbar-brand logowhite"><img id="logo" src="img/logos/logo.png" alt="logo"></a>
-                                        <!-- end logo -->
-                                    </div>
-
-                                    <div class="navbar-toggler bg-primary"></div>
-
-                                    <!-- menu area -->
-                                    <ul class="navbar-nav ms-auto mt-lg-2" id="nav" style="display: none;">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="#!">Causes</a>
-                                            <ul>
-                                                <li><a href="causes-grid.html">Causes Grid</a></li>
-                                                <li><a href="causes-list.html">Causes List</a></li>
-                                                <li><a href="causes-detail.html">Causes Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#!">Pages</a>
-                                            <ul>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="volunteer.html">Volunteer</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="donate-now.html">Donate Now</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="#!">Others</a>
-                                                    <ul>
-                                                        <li><a href="tables.html">Tables</a></li>
-                                                        <li><a href="tabs-and-accordions.html">Tabs And Accordions</a></li>
-                                                        <li><a href="coming-soon.html">Comingsoon</a></li>
-                                                        <li><a href="maintenance.html">Maintenance</a></li>
-                                                        <li><a href="404.html">Page 404</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#!">Events</a>
-                                            <ul>
-                                                <li><a href="event-grid.html">Event Grid</a></li>
-                                                <li><a href="event-list.html">Event List</a></li>
-                                                <li><a href="event-detail.html">Event Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#!">Blog</a>
-                                            <ul>
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-list.html">Blog List</a></li>
-                                                <li><a href="blog-detail.html">Blog Detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                    <!-- end menu area -->
-
-                                    <!-- attribute navigation -->
-                                    <div class="attr-nav">
-                                        <ul>
-                                            <li class="search me-1 me-lg-0"><a href="#!"><i class="fas fa-search"></i></a></li>
-                                            <li class="d-none d-xl-inline-block"><a href="donate-now.html" class="butn theme small text-white">Donate Now</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
                                 </nav>
                             </div>
                         </div>
@@ -280,6 +219,9 @@
     <!-- start scroll to top -->
     <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
     <!-- end scroll to top -->
+
+        <!-- nav bar js -->
+        <script src="js/navBar.js"></script>
 
     <!-- all js include start -->
 

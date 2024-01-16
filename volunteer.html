@@ -35,6 +35,8 @@
     <!-- custom style css -->
     <link href="css/custom.css" rel="stylesheet" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -96,83 +98,8 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="menu_area">
-                                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                                <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light p-0">
 
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- logo -->
-                                        <a href="index.html" class="navbar-brand logowhite"><img id="logo" src="img/logos/ndnCutLogo.png" alt="logo"></a>
-                                        <!-- end logo -->
-                                    </div>
-
-                                    <div class="navbar-toggler bg-primary"></div>
-
-                                    <!-- menu area -->
-                                    <ul class="navbar-nav ms-auto mt-lg-2" id="nav" style="display: none;">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="#!">About Us</a>
-                                            <ul>
-                                                <li><a href="purpose.html">Purpose</a></li>
-                                                <li><a href="vision.html">Vision</a></li>
-                                                <li><a href="background.html">Background</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href="#!">Board of Directors</a>
-                                            <ul>
-                                                <li><a href="chair.html">Chair</a></li>
-                                                <li><a href="treasurer.html">Treasurer</a></li>
-                                                <li><a href="secretary.html">Secretary</a></li>
-                                                <li><a href="boardmember.html">Board Member</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href="#!">Staff</a>
-                                            <ul>
-                                                <li><a href="executivedirector.html">Executive Director</a></li>
-                                                <li><a href="director.html">Deputy Director</a></li>
-                                                <li><a href="coordinator.html">Program Coordinator</a></li>
-                                                <!-- <li><a href="boardmember.html">Board Member</a></li> -->
-                                            </ul>
-                                        </li>
-                                        
-                                        <li><a href="#!">Get Involved</a>
-                                            <ul>
-                                                <!-- <li><a href="trainings.html">Trainings</a></li> -->
-                                                <li><a href="volunteer.html">Volunteer</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="coming-soon.html">Shirt Store</a></li>
-                                                <li><a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" target="blank">Donate Now</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                                <!-- <li><a href="faq.html">FAQ</a></li> -->
-                                                <!-- <li><a href="#!">Others +</a>
-                                                    <ul>
-                                                        <li><a href="tables.html">Tables</a></li>
-                                                        <li><a href="tabs-and-accordions.html">Tabs And Accordions</a></li>
-                                                        <li><a href="maintenance.html">Maintenance</a></li>
-                                                        <li><a href="404.html">Page 404</a></li>
-                                                    </ul>
-                                                </li> -->
-                                            </ul>
-                                        </li>
-                                        <li><a href="event-grid.html">Events</a></li>
-                                            <!-- <ul>
-                                                <li><a href="event-grid.html">Events</a></li>
-                                                <li><a href="event-list.html">Event List</a></li>
-                                            </ul> -->
-                                        </li>
-                                    
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                    <!-- end menu area -->
-
-                                    <!-- attribute navigation -->
-                                    <div class="attr-nav">
-                                        <ul>
-                                            <!-- <li class="search me-1 me-lg-0"><a href="#!"><i class="fas fa-search"></i></a></li> -->
-                                            <li class="d-none d-xl-inline-block"><a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" target="blank" class="butn theme small text-white">Donate Now</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
                                 </nav>
                             </div>
                         </div>
@@ -428,6 +355,9 @@
     <!-- start scroll to top -->
     <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
     <!-- end scroll to top -->
+
+        <!-- nav bar js -->
+        <script src="js/navBar.js"></script>
 
     <!-- all js include start -->
 
