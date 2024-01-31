@@ -172,6 +172,15 @@
 .tribalbg:after { 
   background: #000; 
 }
+
+@media (max-width: 767px) {
+  .tribalbg::after {
+      background-size: cover;
+      background-position: center center;
+      /* other styles for mobile */
+  }
+}
+
 .marginTest{
   margin-bottom: 15%;
   padding-top: 10%;
@@ -626,20 +635,22 @@ input[type=radio] {
     Main Banner
 ====================================== */
 .main-banner .slider-fade {
-  overflow: hidden;
-  position: relative;
-  z-index: 99; }
+    overflow: hidden;
+    position: relative;
+    z-index: 99; 
+}
 .main-banner::after {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  /* background: url("../img/bg/redorangetribal.jpg") repeat center center; */
-  background: #3642a8 url(tribaldesign.jpg) repeat center center;
-  height: 80%;
-  content: "";
-  width: 100%;
-  transform: translateY(-50%);
-  left: 0; }
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    /* background: url("../img/bg/redorangetribal.jpg") repeat center center; */
+    background: #3642a8 url(tribaldesign.jpg) repeat center center;
+    height: 80%;
+    content: "";
+    width: 100%;
+    transform: translateY(-50%);
+    left: 0; 
+}
 
 /* slider-fade */
 .slider-fade h1 {
