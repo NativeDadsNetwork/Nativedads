@@ -19,6 +19,9 @@ $(document).ready(function() {
             <li><a href="#!">Board of Directors</a>
                 <ul>
                     <li><a href="boardChair.html">Board Chair</a></li>
+                    <li><a href="vice-chair.html">Vice Chair</a></li>
+                    <li><a href="treasurer.html">Treasurer</a></li>
+                    <li><a href="secretary.html">Secretary</a></li>
                 </ul>
             </li>
 
@@ -26,6 +29,7 @@ $(document).ready(function() {
                 <ul>
                     <li><a href="executivedirector.html">Executive Director</a></li>
                     <li><a href="director.html">Deputy Director</a></li>
+                    <li><a href="executive-assistant.html">Executive Assistant</a></li>
                     <li><a href="coordinator.html">Program Coordinator</a></li>
                 </ul>
             </li>
@@ -39,6 +43,7 @@ $(document).ready(function() {
                 </ul>
             </li>
             <li><a href="event-grid.html">Events</a></li>
+            <li><a href="impactt.html">IMPACTT</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div class="attr-nav">
