@@ -30,6 +30,8 @@ $(document).ready(function() {
                     <li><a href="director.html">Deputy Director</a></li>
                     <li><a href="executive-assistant.html">Executive Assistant</a></li>
                     <li><a href="coordinator.html">Program Coordinator</a></li>
+                    <li><a href="impactt-coordinator.html">IMPACTT Program Coordinator</a></li>
+                    <li><a href="admin-assistant.html">Administrative Assistant</a></li>
                 </ul>
             </li>
             <li><a href="#!">Get Involved</a>
