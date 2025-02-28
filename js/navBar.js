@@ -19,7 +19,7 @@ $(document).ready(function() {
             <li><a href="#!">Board of Directors</a>
                 <ul>
                     <li><a href="boardChair.html">Board Chair</a></li>
-                    <li><a href="vice-chair.html">Vice Chair</a></li>
+                    <li><a href="secretary.html">Vice Chair</a></li>
                     <li><a href="treasurer.html">Treasurer</a></li>
                 </ul>
             </li>
