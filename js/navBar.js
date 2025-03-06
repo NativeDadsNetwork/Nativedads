@@ -38,7 +38,6 @@ $(document).ready(function() {
                 <ul>
                     <li><a href="volunteer.html">Volunteer</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="coming-soon.html">Shirt Store</a></li>
                     <li><a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" target="blank">Donate Now</a></li>
                     <li><a href="careers.html">Careers</a></li>
                 </ul>
@@ -49,8 +48,10 @@ $(document).ready(function() {
         </ul>
         <div class="attr-nav">
             <ul>
-                <li class="d-none d-xl-inline-block"><a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" target="blank" class="butn theme small text-white">Donate Now</a></li>
+                <li class="d-none d-xl-inline-block"><a href="donate.html" class="butn theme small text-white">Donate Now</a></li>
             </ul>
         </div>
     `);
 });
+
+// <li class="d-none d-xl-inline-block"><a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" target="blank" class="butn theme small text-white">Donate Now</a></li>
