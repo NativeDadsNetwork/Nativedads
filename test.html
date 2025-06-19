@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="With your Donation Native Dads Network will be able to provide cultural relevant services to rural and urban tribal communities across California.">
+    <title>Native Dads Network - Home</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1e3a5f;
+            --secondary-color: #c17817;
+            --accent-color: #8b4513;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f8fafc;
+            --bg-warm: #fef5e7;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Header Styles */
+        .top-bar {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+        }
+
+        .navbar {
+            background: var(--white) !important;
+            box-shadow: var(--shadow);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--text-dark) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem !important;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background: var(--bg-light);
+            color: var(--primary-color) !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img/gallery/conBanner.jpg') center/cover;
+            opacity: 0.15;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero .lead {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn-custom {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-custom:hover {
+            background: #a0630f;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            color: white;
+        }
+
+        .btn-outline-custom {
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-custom:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-subtitle {
+            color: var(--secondary-color);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Card Styles */
+        .card-modern {
+            border: none;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .card-modern:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-modern img {
+            transition: transform 0.3s ease;
+        }
+
+        .card-modern:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Statistics Section */
+        .stats-section {
+            background: var(--bg-warm);
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* Team Section */
+        .team-card {
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            border: 4px solid var(--bg-light);
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover img {
+            border-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
+
+        .team-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 0.25rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Gallery Section */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(30, 58, 95, 0.8);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img/gallery/The-Art-of-Smudging.jpg') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer h5 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #4a5568;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            color: #a0aec0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Video Responsive */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center">
+                        <span class="me-4"><i class="fas fa-phone me-2"></i>916.910.7663</span>
+                        <span><i class="fas fa-envelope me-2"></i>info@nativedadsnetwork.org</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="https://www.facebook.com/NativeDadsNetwork" class="text-white me-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC51jvot9qU3dRVmxn54QGKA" class="text-white">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logos/ndnCutLogo1.jpg" alt="Native Dads Network">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="purpose.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event-grid.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
+                </ul>
+                <a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" 
+                   class="btn-custom ms-3" target="_blank">Donate Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-content">
+                        <h1 class="font-display">Help Native Dads Network</h1>
+                        <p class="lead">Little efforts make big changes. We provide culturally rich support to fathers, mothers, and their families across California's tribal communities.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" 
+                               class="btn-custom" target="_blank">Donate Now</a>
+                            <a href="purpose.html" class="btn-outline-custom">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <img src="img/gallery/drugsOffRez.jpg" alt="Community Support" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <div class="section-subtitle">About Us</div>
+                        <h2 class="section-title">We're here to help</h2>
+                        <p class="mb-4">We are a 501(c)(3) community based group offering support to fathers, mothers, and their families. Our approach is a culturally rich model that inspires, motivates and strengthens families and their communities.</p>
+                        <a href="purpose.html" class="btn-custom">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-number">22</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-number">99</div>
+                        <div class="stat-label">Events Put On</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card">
+                        <div class="stat-number">30</div>
+                        <div class="stat-label">Communities Served</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card">
+                        <i class="fas fa-plus fa-2x text-primary mb-3"></i>
+                        <div class="stat-label"><strong>Become a Volunteer</strong></div>
+                        <a href="volunteer.html" class="btn btn-outline-primary mt-2 btn-sm">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mural Project Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Woodland Mural Project</div>
+                <h2 class="section-title">Media Coverage</h2>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="card-modern">
+                        <img src="img/mural-project/mural1.jpg" class="card-img-top" alt="Mural Project">
+                        <div class="card-body p-4">
+                            <h3 class="font-display mb-3">Daily Democrat Coverage</h3>
+                            <p class="text-muted mb-4">The 60 by 30-foot cultural mural was unveiled during a Friday morning celebration, culminating a series of cultural workshops for Native American students organized by the Native Dads Network.</p>
+                            <a href="https://www.dailydemocrat.com/2023/06/17/woodland-area-native-american-students-unveil-mural-at-douglass-middle-school/" 
+                               target="_blank" class="btn-custom">Read Full Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mb-4">
+                        <h4 class="font-display mb-3">ABC10 Coverage</h4>
+                        <div class="video-wrapper mb-3">
+                            <iframe src="https://www.youtube.com/embed/AMh4I99NuO8" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <a href="https://www.abc10.com/video/news/local/woodland/new-artwork-unveiled-in-woodland-is-celebrating-the-local-native-american-community/103-766a9e52-13e9-4083-a017-4fac6b0e998d" 
+                           target="_blank" class="btn btn-outline-primary">View Article</a>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-display mb-3">CBS13 Coverage</h4>
+                        <div class="video-wrapper mb-3">
+                            <iframe src="https://www.youtube.com/embed/tlm6DNFUA8s" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <a href="https://www.cbsnews.com/sacramento/video/native-american-mural-painted-by-yolo-county-students-unveiled-at-woodland-school/" 
+                           target="_blank" class="btn btn-outline-primary">View Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Team</div>
+                <h2 class="section-title">Meet Our Team</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card">
+                        <img src="img/gallery/miked.jpg" alt="Mike Duncan">
+                        <h3 class="team-name">Mike Duncan</h3>
+                        <p class="team-role">Executive Director</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/mike.duncan.714" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/wailaki.md/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/mike-duncan-90347573/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card">
+                        <img src="img/gallery/albert.jpg" alt="Albert Titman">
+                        <h3 class="team-name">Albert Titman</h3>
+                        <p class="team-role">Deputy Director</p>
+                        <div class="social-links">
+                            <!-- Add social links if available -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card">
+                        <img src="img/gallery/PatriciaT.JPG" alt="Patricia Titman">
+                        <h3 class="team-name">Patricia Titman</h3>
+                        <p class="team-role">Program Coordinator</p>
+                        <div class="social-links">
+                            <!-- Add social links if available -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card">
+                        <img src="img/gallery/joshh.jpg" alt="Joshua Hoaglen Sr.">
+                        <h3 class="team-name">Joshua Hoaglen Sr.</h3>
+                        <p class="team-role">Board Chair</p>
+                        <div class="social-links">
+                            <!-- Add social links if available -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Gallery</div>
+                <h2 class="section-title">Our Gallery</h2>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="img/content/IMG_8204.jpg" alt="Gallery Image 1">
+                        <div class="gallery-overlay">
+                            <a href="gallery.html" class="btn-outline-custom">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="img/content/IMG_8329.JPG" alt="Gallery Image 2">
+                        <div class="gallery-overlay">
+                            <a href="gallery.html" class="btn-outline-custom">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="img/event/talkingCircle1.jpg" alt="Gallery Image 3">
+                        <div class="gallery-overlay">
+                            <a href="gallery.html" class="btn-outline-custom">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="cta-content">
+                        <h2 class="font-display mb-4">Help support us by donating</h2>
+                        <p class="lead mb-4">Your donation helps fund our groups, trips, graduations, family events, and our continued effort to promote fatherhood in Native communities.</p>
+                        <a href="https://www.paypal.com/paypalme/Healingtogether22?country.x=US&locale.x=en_US" 
+                           class="btn-custom" target="_blank">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funders Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">Our Partners</div>
+                <h2 class="section-title">Funders & Supporters</h2>
+            </div>
+            
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <img src="img/partners/7th Generation Fund.png" alt="7th Generation Fund" class="img-fluid mb-3" style="max-height: 80px;">
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <img src="img/partners/Elevate Youth California.png" alt="Elevate Youth California" class="img-fluid mb-3" style="max-height: 80px;">
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <img src="img/partners/commonCounsel.png" alt="Common Counsel Foundation" class="img-fluid mb-3" style="max-height: 80px;">
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <img src="img/partners/Native Voices Rising.png" alt="Native Voices Rising" class="img-fluid mb-3" style="max-height: 80px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <img src="img/logos/ndnlogo.jpg" alt="Native Dads Network" class="img-fluid mb-3" style="max-width: 150px;">
+                    <p class="mb-4">Native Dads Network is for the people. We are here to heal generational trauma and help lay the path forward.</p>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.facebook.com/NativeDadsNetwork/" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UC51jvot9qU3dRVmxn54QGKA" target="_blank">
+                            <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="event-grid.html">Events</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>More</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="purpose.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <div class="mb-2">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        2151 River Plaza Dr Ste 200, Sacramento, CA 95833
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:info@nativedadsnetwork.org">info@nativedadsnetwork.org</a>
+                    </div>
+                    <div class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:9169107663">(916) 910-7663</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Native Dads Network. Powered by <a href="https://thelakotadev.com/" target="_blank">The Lakota Dev</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'white';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-on-scroll');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card-modern, .stat-card, .team-card, .gallery-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
