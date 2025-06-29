@@ -46,7 +46,13 @@ $(document).ready(function() {
                 </ul>
             </li>
             <li><a href="event-grid.html">Events</a></li>
-            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="#!">Our Programs</a>
+                <ul>
+                    <li><a href="wellness.html">Wellness Department</a></li>
+                    <li><a href="youth-programming.html">Youth Programming</a></li>
+                    <li><a href="conferences.html">Conferences</a></li>
+                </ul>
+            </li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <div class="attr-nav">

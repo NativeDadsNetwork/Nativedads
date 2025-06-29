@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Native Dads Network Programs - Wellness Department and Youth Programming">
+        <title>Our Programs - Native Dads Network</title>
+        
+        <!-- favicon -->
+        <link rel="shortcut icon" href="img/logos/ndnlogo.jpg" />
+        <link rel="apple-touch-icon" href="img/logos/ndnlogo.jpg" />
+        <link rel="apple-touch-icon" sizes="72x72" href="img/logos/ndnlogo.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="img/logos/ndnlogo.jpg" />
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- plugins -->
+        <link rel="stylesheet" href="css/plugins.css" />
+        <link rel="stylesheet" href="search/search.css" />
+        <link rel="stylesheet" href="quform/css/base.css">
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+<style>
+            :root {
+                --primary-color: #4B0082;
+                --secondary-color: #6A4C93;
+                --accent-color: #FFD700;
+                --dark-indigo: #2E0054;
+                --light-indigo: #8A7CA8;
+                --cream: #FFF8DC;
+                --indigo-blue: #4169E1;
+                --lavender: #E6E6FA;
+                --deep-indigo: #1A0033;
+                --warm-white: #FEFBF3;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            a {
+                text-decoration: none !important;
+            }
+            
+            body {
+                font-family: 'Inter', sans-serif;
+                line-height: 1.7;
+                background: linear-gradient(135deg, var(--dark-indigo) 0%, var(--primary-color) 50%, var(--indigo-blue) 100%);
+                background-attachment: fixed;
+                position: relative;
+                overflow-x: hidden;
+            }
+
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url('img/bg/tribaldesign.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                opacity: 0.15;
+                z-index: -2;
+            }
+
+            body::after {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, 
+                    rgba(46, 0, 84, 0.9) 0%, 
+                    rgba(26, 0, 51, 0.8) 25%,
+                    rgba(106, 76, 147, 0.85) 50%,
+                    rgba(46, 0, 84, 0.9) 75%,
+                    rgba(26, 0, 51, 0.95) 100%);
+                z-index: -1;
+            }
+            
+            /* Hero Section */
+            .hero-section {
+                background: linear-gradient(rgba(26, 0, 51, 0.7), rgba(46, 0, 84, 0.8)), 
+                           radial-gradient(circle at center, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+                color: var(--warm-white);
+                padding: 140px 0 120px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .hero-section::before {
+                content: '';
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,215,0,0.3)"/><circle cx="20" cy="20" r="1" fill="rgba(106,76,147,0.4)"/><circle cx="80" cy="80" r="1.5" fill="rgba(255,215,0,0.2)"/></svg>');
+                animation: float 20s infinite linear;
+                pointer-events: none;
+            }
+
+            @keyframes float {
+                0% { transform: translate(0, 0) rotate(0deg); }
+                100% { transform: translate(-50px, -50px) rotate(360deg); }
+            }
+
+            .hero-section h1 {
+                font-family: 'Playfair Display', serif;
+                font-weight: 700;
+                font-size: 4rem;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+                margin-bottom: 1.5rem;
+                background: linear-gradient(135deg, var(--cream), var(--accent-color));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .hero-section .lead {
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: var(--cream);
+                text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+                margin-bottom: 3rem;
+            }
+            
+            /* Button Styles */
+            .btn-primary-custom {
+                background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+                border: none;
+                padding: 16px 40px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 0.4s ease;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 8px 25px rgba(106, 76, 147, 0.3);
+            }
+
+            .btn-primary-custom::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+                transition: left 0.6s;
+            }
+
+            .btn-primary-custom:hover::before {
+                left: 100%;
+            }
+
+            .btn-primary-custom:hover {
+                cursor: none;
+                transform: translateY(-3px);
+                box-shadow: 0 12px 35px rgba(106, 76, 147, 0.4);
+                background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
+            }
+
+            .btn-outline-light {
+                border: 2px solid var(--cream);
+                color: var(--cream);
+                padding: 16px 40px;
+                border-radius: 50px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 0.4s ease;
+                backdrop-filter: blur(10px);
+            }
+
+            .btn-outline-light:hover {
+                background: var(--cream);
+                color: var(--primary-color);
+                transform: translateY(-3px);
+                box-shadow: 0 12px 35px rgba(255, 248, 220, 0.3);
+            }
+            
+            /* Section Styles */
+            .section-wrapper {
+                background: rgba(254, 251, 243, 0.98);
+                backdrop-filter: blur(10px);
+                margin: 80px 0;
+                border-radius: 30px;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+                border: 1px solid rgba(106, 76, 147, 0.2);
+                position: relative;
+                overflow: hidden;
+            }
+
+            .section-wrapper::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--indigo-blue));
+            }
+
+            .section-title {
+                font-family: 'Playfair Display', serif;
+                color: var(--primary-color);
+                font-weight: 700;
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+                position: relative;
+                text-align: center;
+            }
+
+            .section-title::after {
+                content: '';
+                width: 100px;
+                height: 4px;
+                background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 2px;
+            }
+
+            .section-subtitle {
+                color: var(--dark-indigo);
+                font-size: 1.3rem;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+            
+            /* Card Styles */
+            .program-card {
+                background: rgba(255, 255, 255, 0.95);
+                border: none;
+                border-radius: 20px;
+                box-shadow: 0 15px 40px rgba(46, 0, 84, 0.15);
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                overflow: hidden;
+                position: relative;
+                backdrop-filter: blur(10px);
+            }
+
+            .program-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+                transform: scaleX(0);
+                transition: transform 0.4s ease;
+            }
+
+            .program-card:hover::before {
+                transform: scaleX(1);
+            }
+
+            .program-card:hover {
+                transform: translateY(-12px) scale(1.02);
+                box-shadow: 0 25px 60px rgba(46, 0, 84, 0.25);
+            }
+
+            .program-card .card-header {
+                background: linear-gradient(135deg, var(--primary-color), var(--dark-indigo));
+                color: white;
+                border: none;
+                padding: 2rem 1.5rem;
+                position: relative;
+            }
+
+            .program-card .card-header::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+            }
+
+            .program-card .card-body {
+                padding: 2.5rem;
+            }
+
+            .feature-icon {
+                width: 80px;
+                height: 80px;
+                background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 1.5rem;
+                font-size: 2rem;
+                box-shadow: 0 8px 25px rgba(106, 76, 147, 0.3);
+                transition: transform 0.3s ease;
+            }
+
+            .feature-icon:hover {
+                transform: scale(1.1) rotate(5deg);
+            }
+
+            /* Stats Cards */
+            .stats-card {
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(254, 251, 243, 0.9));
+                border-radius: 20px;
+                padding: 2.5rem 1.5rem;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(46, 0, 84, 0.1);
+                transition: all 0.3s ease;
+                border: 1px solid rgba(106, 76, 147, 0.2);
+                backdrop-filter: blur(10px);
+            }
+
+            .stats-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(46, 0, 84, 0.2);
+            }
+
+            .stats-number {
+                font-size: 3rem;
+                font-weight: 800;
+                background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 0.5rem;
+            }
+
+            .stats-text {
+                color: var(--dark-indigo);
+                font-weight: 500;
+                font-size: 0.95rem;
+            }
+
+            /* Mural Gallery */
+            .mural-gallery {
+                position: relative;
+                overflow: hidden;
+                border-radius: 20px;
+                box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+                transition: all 0.4s ease;
+            }
+
+            .mural-gallery:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+            }
+
+            .mural-gallery img {
+                transition: transform 0.6s ease;
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+
+            .mural-gallery:hover img {
+                transform: scale(1.1);
+            }
+
+            .mural-gallery .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: linear-gradient(transparent, rgba(0,0,0,0.8));
+                color: white;
+                padding: 2rem;
+                transform: translateY(100%);
+                transition: transform 0.4s ease;
+            }
+
+            .mural-gallery:hover .overlay {
+                transform: translateY(0);
+            }
+
+            /* Contact Info */
+            .contact-info {
+                background: linear-gradient(135deg, rgba(254, 251, 243, 0.95), rgba(255, 248, 220, 0.9));
+                border-radius: 25px;
+                padding: 3rem;
+                border: 2px solid rgba(106, 76, 147, 0.3);
+                backdrop-filter: blur(15px);
+                box-shadow: 0 20px 50px rgba(46, 0, 84, 0.15);
+            }
+
+            .contact-info .icon {
+                color: var(--secondary-color);
+                margin-right: 0.8rem;
+                font-size: 1.2rem;
+            }
+
+            /* Youth Section */
+            .youth-section {
+                background: linear-gradient(135deg, rgba(26, 0, 51, 0.95), rgba(46, 0, 84, 0.9));
+                margin: 80px 0;
+                border-radius: 30px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+            }
+
+            .youth-section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 60,35 90,35 70,55 80,90 50,75 20,90 30,55 10,35 40,35" fill="rgba(255,215,0,0.1)"/></svg>');
+                background-size: 150px 150px;
+                opacity: 0.3;
+                animation: rotate 30s infinite linear;
+            }
+
+            @keyframes rotate {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            /* List Styles */
+            .custom-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .custom-list li {
+                padding: 0.8rem 0;
+                border-bottom: 1px solid rgba(106, 76, 147, 0.1);
+                transition: all 0.3s ease;
+                position: relative;
+                padding-left: 2rem;
+            }
+
+            .custom-list li::before {
+                content: '✦';
+                position: absolute;
+                left: 0;
+                color: var(--secondary-color);
+                font-weight: bold;
+                transition: transform 0.3s ease;
+            }
+
+            .custom-list li:hover {
+                padding-left: 2.5rem;
+                color: var(--primary-color);
+            }
+
+            .custom-list li:hover::before {
+                transform: scale(1.2);
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .hero-section {
+                    padding: 100px 0 80px;
+                }
+                
+                .hero-section h1 {
+                    font-size: 2.5rem;
+                }
+
+                .section-title {
+                    font-size: 2.5rem;
+                }
+
+                .btn-primary-custom,
+                .btn-outline-light {
+                    padding: 14px 30px;
+                    font-size: 1rem;
+                }
+
+                .stats-number {
+                    font-size: 2.2rem;
+                }
+
+                .section-wrapper {
+                    margin: 40px 0;
+                    border-radius: 20px;
+                }
+            }
+
+            /* Scroll Animations */
+            .fade-in {
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s ease;
+            }
+
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* Text Colors for different sections */
+            .text-white-90 {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .text-accent {
+                color: var(--secondary-color);
+            }
+
+            .bg-glass {
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .text-secondary {
+                color: var(--indigo-blue) !important; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <!-- Navigation -->
+            <header class="header-style3 bg-white">
+
+                <div id="top-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-xs-12">
+                                <div class="top-bar-info">
+                                    <ul class="ps-0">
+                                        <li><i class="ti-mobile text-secondary"></i>916.910.7663</li>
+                                        <li class="d-none d-sm-inline-block"><i class="ti-email text-secondary"></i>info@nativedadsnetwork.org</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-3 d-none d-md-block">
+                                <ul class="top-social-icon ps-0">
+                                    <li><a href="https://www.facebook.com/NativeDadsNetwork"><i class="fab fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-default">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12">
+                                <div class="menu_area text-decoration-none">
+                                    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light p-0 text-decoration-none">
+
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Section -->
+            <section id="home" class="hero-section text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <h1 class="display-4 fw-bold mb-4 fade-in">Our Programs</h1>
+                            <p class="btn btn-primary-custom btn-lg me-3">Wellness Department</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wellness Department Section -->
+            <div class="container">
+                <section id="wellness" class="section-wrapper">
+                    <div class="py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center mb-5">
+                                    <h2 class="section-title fade-in">Wellness Department</h2>
+                                    <p class="section-subtitle fade-in">Trauma-informed, culturally-centered healing and support services</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-4">
+                                <!-- Individual and Family Therapy -->
+                                <div class="col-lg-4 col-md-6 fade-in">
+                                    <div class="card program-card h-100">
+                                        <div class="card-header text-center">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <h4 class="mb-0">Individual & Family Therapy</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="custom-list">
+                                                <li>Individual and Family Therapy with a trauma informed licensed mental health professional</li>
+                                                <li>Culturally knowledgeable Substance Use disorder counseling with a certified substance use professional</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Motherhood and Fatherhood is Sacred -->
+                                <div class="col-lg-4 col-md-6 fade-in">
+                                    <div class="card program-card h-100">
+                                        <div class="card-header text-center">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-users"></i>
+                                            </div>
+                                            <h4 class="mb-0">Motherhood & Fatherhood is Sacred</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="custom-list">
+                                                <li>Culturally Centered Parenting Courses</li>
+                                                <li>Wellbriety Groups</li>
+                                                <li>Talking Circles</li>
+                                                <li>A Graduation Ceremony will convene upon completion of 12 week courses</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Red Road Talking Circle -->
+                                <div class="col-lg-4 col-md-6 fade-in">
+                                    <div class="card program-card h-100">
+                                        <div class="card-header text-center">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-circle"></i>
+                                            </div>
+                                            <h4 class="mb-0">Red Road Talking Circle</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="custom-list">
+                                                <li>Culturally Centered Parenting Courses</li>
+                                                <li>Wellbriety Groups</li>
+                                                <li>Talking Circles</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Registration Information -->
+                            <div class="row mt-5">
+                                <div class="col-lg-10 mx-auto fade-in">
+                                    <div class="contact-info">
+                                        <h3 class="text-center mb-4" style="color: var(--primary-color);">How to Register for Our Program</h3>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <p><i class="fas fa-phone icon"></i><strong>Call:</strong> 916-910-7663</p>
+                                                <p><i class="fas fa-envelope icon"></i><strong>Email:</strong> info@nativedadsnetwork.org</p>
+                                                <p>To become a participant in the NDN Wellness Program contact our office. You will be asked to provide registration information.</p>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <p><i class="fas fa-clipboard-list icon"></i><strong>Requirements:</strong></p>
+                                                <ul class="custom-list small">
+                                                    <li>Tribal enrollment/membership or documentation showing descendancy from an enrolled tribal member (descendants can link back two generations)</li>
+                                                    <li>Intake and screening assessment to determine eligibility and appropriateness</li>
+                                                    <li>Program Participation Agreement signature ensuring understanding of expectations</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+           <footer class="bg-img cover-background" data-overlay-dark="85" data-background="img/bg/tribaldesign.jpg">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="mb-3">
+                                <img src="img/logos/ndnlogo.jpg" alt="Native Dads Network" class="img-fluid" style="max-width: 120px;">
+                            </div>
+                            <p class="text-white-90 mb-4">Native Dads Network is for the people. We are here to heal generational trauma and help lay the path forward.</p>
+                            <div class="d-flex gap-3">
+                                <a class="text-secondary" href="https://www.facebook.com/NativeDadsNetwork/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                <a class="text-secondary" href="https://www.youtube.com/channel/UC51jvot9qU3dRVmxn54QGKA" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="text-secondary mb-3">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="mission.html" class="text-white-90 text-decoration-none">Mission</a></li>
+                                <li class="mb-2"><a href="event-grid.html" class="text-white-90 text-decoration-none">Events</a></li>
+                                <li class="mb-2"><a href="volunteer.html" class="text-white-90 text-decoration-none">Volunteer</a></li>
+                                <li class="mb-2"><a href="contact.html" class="text-white-90 text-decoration-none">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="text-secondary mb-3">Programs</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#wellness" class="text-white-90 text-decoration-none">Wellness Department</a></li>
+                                <li class="mb-2"><a href="#youth" class="text-white-90 text-decoration-none">Youth Programming</a></li>
+                                <li class="mb-2"><a href="careers.html" class="text-white-90 text-decoration-none">Careers</a></li>
+                                <li class="mb-2"><a href="gallery.html" class="text-white-90 text-decoration-none">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="text-secondary mb-3">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex">
+                                    <i class="fas fa-map-marker-alt text-secondary me-2 mt-1"></i>
+                                    <span class="text-white-90">2151 River Plaza Dr Ste 200, Sacramento, CA 95833</span>
+                                </li>
+                                <li class="mb-2 d-flex">
+                                    <i class="far fa-envelope text-secondary me-2 mt-1"></i>
+                                    <a href="mailto:info@nativedadsnetwork.org" class="text-white-90 text-decoration-none">info@nativedadsnetwork.org</a>
+                                </li>
+                                <li class="mb-2 d-flex">
+                                    <i class="fas fa-phone text-secondary me-2 mt-1"></i>
+                                    <a href="tel:9169107663" class="text-white-90 text-decoration-none">(916) 910-7663</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="border-secondary my-4">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p class="mb-0 text-white-90">&copy; 2022 Native Dads Network is Powered by <a href="https://thelakotadev.com/" target="_blank" class="text-secondary">The Lakota Dev</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Scroll to top -->
+            <a href="#!" class="scroll-to-top" style="position: fixed; bottom: 30px; right: 30px; background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3); transition: all 0.3s ease; z-index: 1000;">
+                <i class="fas fa-angle-up" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script>
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Scroll to top functionality
+            const scrollToTop = document.querySelector('.scroll-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTop.style.opacity = '1';
+                    scrollToTop.style.visibility = 'visible';
+                } else {
+                    scrollToTop.style.opacity = '0';
+                    scrollToTop.style.visibility = 'hidden';
+                }
+            });
+
+            scrollToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Enhanced card hover effects
+            document.querySelectorAll('.program-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-12px) scale(1.02)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Parallax effect for hero section
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('.hero-section');
+                if (parallax) {
+                    const speed = scrolled * 0.5;
+                    parallax.style.transform = `translateY(${speed}px)`;
+                }
+            });
+        </script>
+
+        <!-- nav bar js -->
+        <script src="js/navBar.js"></script>
+
+        <!-- all js include start -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- popper js -->
+        <script src="js/popper.min.js"></script>
+
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- search -->
+        <script src="search/search.js"></script>
+
+        <!-- navigation -->
+        <script src="js/nav-menu.js"></script>
+
+        <!-- tab -->
+        <script src="js/easy.responsive.tabs.js"></script>
+
+        <!-- owl carousel -->
+        <script src="js/owl.carousel.js"></script>
+
+        <!-- jquery.counterup.min -->
+        <script src="js/jquery.counterup.min.js"></script>
+
+        <!-- stellar js -->
+        <script src="js/jquery.stellar.min.js"></script>
+
+        <!-- waypoints js -->
+        <script src="js/waypoints.min.js"></script>
+
+        <!-- countdown js -->
+        <script src="js/countdown.js"></script>
+
+        <!-- jquery.magnific-popup js -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+
+        <!-- isotope.pkgd.min js -->
+        <script src="js/isotope.pkgd.min.js"></script>
+
+        <!-- lightgallery js -->
+        <script src="js/lightgallery-all.js"></script>
+
+        <!-- mousewheel js -->
+        <script src="js/jquery.mousewheel.min.js"></script>
+
+        <!-- wow js -->
+        <script src="js/wow.js"></script>
+
+        <!-- lettering js -->
+        <script src="js/jquery.lettering.js"></script>
+
+        <!-- textillate js -->
+        <script src="js/jquery.textillate.js"></script>
+
+        <!-- tilt js -->
+        <script src="js/tilt.js"></script>
+
+        <!-- custom scripts -->
+        <script src="js/main.js"></script>
+
+        <!-- form plugins js -->
+        <script src="quform/js/plugins.js"></script>
+
+        <!-- form scripts js -->
+        <script src="quform/js/scripts.js"></script>
+    </body>
+</html>

@@ -26,17 +26,17 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
-        <style>
+<style>
             :root {
-                --primary-color: #2D5016;
-                --secondary-color: #FF6B35;
-                --accent-color: #F7931E;
-                --dark-green: #1A3009;
-                --light-sage: #8FBC8F;
+                --primary-color: #4B0082;
+                --secondary-color: #6A4C93;
+                --accent-color: #FFD700;
+                --dark-indigo: #2E0054;
+                --light-indigo: #8A7CA8;
                 --cream: #FFF8DC;
-                --earth-brown: #8B4513;
-                --copper: #B87333;
-                --deep-red: #8B0000;
+                --indigo-blue: #4169E1;
+                --lavender: #E6E6FA;
+                --deep-indigo: #1A0033;
                 --warm-white: #FEFBF3;
             }
             
@@ -53,7 +53,7 @@
             body {
                 font-family: 'Inter', sans-serif;
                 line-height: 1.7;
-                background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-color) 50%, var(--earth-brown) 100%);
+                background: linear-gradient(135deg, var(--dark-indigo) 0%, var(--primary-color) 50%, var(--indigo-blue) 100%);
                 background-attachment: fixed;
                 position: relative;
                 overflow-x: hidden;
@@ -82,18 +82,18 @@
                 right: 0;
                 bottom: 0;
                 background: linear-gradient(45deg, 
-                    rgba(45, 80, 22, 0.9) 0%, 
-                    rgba(26, 48, 9, 0.8) 25%,
-                    rgba(139, 69, 19, 0.85) 50%,
-                    rgba(45, 80, 22, 0.9) 75%,
-                    rgba(26, 48, 9, 0.95) 100%);
+                    rgba(46, 0, 84, 0.9) 0%, 
+                    rgba(26, 0, 51, 0.8) 25%,
+                    rgba(106, 76, 147, 0.85) 50%,
+                    rgba(46, 0, 84, 0.9) 75%,
+                    rgba(26, 0, 51, 0.95) 100%);
                 z-index: -1;
             }
             
             /* Hero Section */
             .hero-section {
-                background: linear-gradient(rgba(26, 48, 9, 0.7), rgba(45, 80, 22, 0.8)), 
-                           radial-gradient(circle at center, rgba(255, 107, 53, 0.2) 0%, transparent 70%);
+                background: linear-gradient(rgba(26, 0, 51, 0.7), rgba(46, 0, 84, 0.8)), 
+                           radial-gradient(circle at center, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
                 color: var(--warm-white);
                 padding: 140px 0 120px;
                 position: relative;
@@ -107,7 +107,7 @@
                 left: -50%;
                 width: 200%;
                 height: 200%;
-                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,107,53,0.3)"/><circle cx="20" cy="20" r="1" fill="rgba(247,147,30,0.4)"/><circle cx="80" cy="80" r="1.5" fill="rgba(255,107,53,0.2)"/></svg>');
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,215,0,0.3)"/><circle cx="20" cy="20" r="1" fill="rgba(106,76,147,0.4)"/><circle cx="80" cy="80" r="1.5" fill="rgba(255,215,0,0.2)"/></svg>');
                 animation: float 20s infinite linear;
                 pointer-events: none;
             }
@@ -151,7 +151,7 @@
                 transition: all 0.4s ease;
                 position: relative;
                 overflow: hidden;
-                box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+                box-shadow: 0 8px 25px rgba(106, 76, 147, 0.3);
             }
 
             .btn-primary-custom::before {
@@ -170,8 +170,9 @@
             }
 
             .btn-primary-custom:hover {
+                cursor: none;
                 transform: translateY(-3px);
-                box-shadow: 0 12px 35px rgba(255, 107, 53, 0.4);
+                box-shadow: 0 12px 35px rgba(106, 76, 147, 0.4);
                 background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
             }
 
@@ -202,7 +203,7 @@
                 margin: 80px 0;
                 border-radius: 30px;
                 box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-                border: 1px solid rgba(255, 107, 53, 0.2);
+                border: 1px solid rgba(106, 76, 147, 0.2);
                 position: relative;
                 overflow: hidden;
             }
@@ -214,7 +215,7 @@
                 left: 0;
                 right: 0;
                 height: 4px;
-                background: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--copper));
+                background: linear-gradient(90deg, var(--secondary-color), var(--accent-color), var(--indigo-blue));
             }
 
             .section-title {
@@ -240,7 +241,7 @@
             }
 
             .section-subtitle {
-                color: var(--earth-brown);
+                color: var(--dark-indigo);
                 font-size: 1.3rem;
                 font-weight: 400;
                 text-align: center;
@@ -252,7 +253,7 @@
                 background: rgba(255, 255, 255, 0.95);
                 border: none;
                 border-radius: 20px;
-                box-shadow: 0 15px 40px rgba(45, 80, 22, 0.15);
+                box-shadow: 0 15px 40px rgba(46, 0, 84, 0.15);
                 transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                 overflow: hidden;
                 position: relative;
@@ -277,11 +278,11 @@
 
             .program-card:hover {
                 transform: translateY(-12px) scale(1.02);
-                box-shadow: 0 25px 60px rgba(45, 80, 22, 0.25);
+                box-shadow: 0 25px 60px rgba(46, 0, 84, 0.25);
             }
 
             .program-card .card-header {
-                background: linear-gradient(135deg, var(--primary-color), var(--dark-green));
+                background: linear-gradient(135deg, var(--primary-color), var(--dark-indigo));
                 color: white;
                 border: none;
                 padding: 2rem 1.5rem;
@@ -313,7 +314,7 @@
                 justify-content: center;
                 margin: 0 auto 1.5rem;
                 font-size: 2rem;
-                box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+                box-shadow: 0 8px 25px rgba(106, 76, 147, 0.3);
                 transition: transform 0.3s ease;
             }
 
@@ -327,15 +328,15 @@
                 border-radius: 20px;
                 padding: 2.5rem 1.5rem;
                 text-align: center;
-                box-shadow: 0 10px 30px rgba(45, 80, 22, 0.1);
+                box-shadow: 0 10px 30px rgba(46, 0, 84, 0.1);
                 transition: all 0.3s ease;
-                border: 1px solid rgba(255, 107, 53, 0.2);
+                border: 1px solid rgba(106, 76, 147, 0.2);
                 backdrop-filter: blur(10px);
             }
 
             .stats-card:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 15px 40px rgba(45, 80, 22, 0.2);
+                box-shadow: 0 15px 40px rgba(46, 0, 84, 0.2);
             }
 
             .stats-number {
@@ -349,7 +350,7 @@
             }
 
             .stats-text {
-                color: var(--earth-brown);
+                color: var(--dark-indigo);
                 font-weight: 500;
                 font-size: 0.95rem;
             }
@@ -400,9 +401,9 @@
                 background: linear-gradient(135deg, rgba(254, 251, 243, 0.95), rgba(255, 248, 220, 0.9));
                 border-radius: 25px;
                 padding: 3rem;
-                border: 2px solid rgba(255, 107, 53, 0.3);
+                border: 2px solid rgba(106, 76, 147, 0.3);
                 backdrop-filter: blur(15px);
-                box-shadow: 0 20px 50px rgba(45, 80, 22, 0.15);
+                box-shadow: 0 20px 50px rgba(46, 0, 84, 0.15);
             }
 
             .contact-info .icon {
@@ -413,7 +414,7 @@
 
             /* Youth Section */
             .youth-section {
-                background: linear-gradient(135deg, rgba(26, 48, 9, 0.95), rgba(45, 80, 22, 0.9));
+                background: linear-gradient(135deg, rgba(26, 0, 51, 0.95), rgba(46, 0, 84, 0.9));
                 margin: 80px 0;
                 border-radius: 30px;
                 position: relative;
@@ -428,7 +429,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 60,35 90,35 70,55 80,90 50,75 20,90 30,55 10,35 40,35" fill="rgba(255,107,53,0.1)"/></svg>');
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,10 60,35 90,35 70,55 80,90 50,75 20,90 30,55 10,35 40,35" fill="rgba(255,215,0,0.1)"/></svg>');
                 background-size: 150px 150px;
                 opacity: 0.3;
                 animation: rotate 30s infinite linear;
@@ -447,7 +448,7 @@
 
             .custom-list li {
                 padding: 0.8rem 0;
-                border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+                border-bottom: 1px solid rgba(106, 76, 147, 0.1);
                 transition: all 0.3s ease;
                 position: relative;
                 padding-left: 2rem;
@@ -529,9 +530,10 @@
             }
 
             .text-secondary {
-                color: #45c1ca !important; 
+                color: var(--indigo-blue) !important; 
             }
         </style>
+
     </head>
     <body>
         <div class="page-wrapper">
@@ -579,271 +581,58 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-10">
                             <h1 class="display-4 fw-bold mb-4 fade-in">Our Programs</h1>
-                            <p class="lead mb-5 fade-in">Empowering Native communities through culturally-centered wellness and youth leadership programs</p>
-                            <div class="fade-in">
-                                <a href="#wellness" class="btn btn-primary-custom btn-lg me-3">Explore Wellness</a>
-                                <a href="#youth" class="btn btn-outline-light btn-lg">Youth Programs</a>
-                            </div>
+                            <p class="btn btn-primary-custom btn-lg me-3">Conferences</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Wellness Department Section -->
+            <!-- Conferences Section -->
             <div class="container">
-                <section id="wellness" class="section-wrapper">
+                <section id="conferences" class="section-wrapper">
                     <div class="py-5">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center mb-5">
-                                    <h2 class="section-title fade-in">Wellness Department</h2>
-                                    <p class="section-subtitle fade-in">Trauma-informed, culturally-centered healing and support services</p>
-                                </div>
-                            </div>
-                            
-                            <div class="row g-4">
-                                <!-- Individual and Family Therapy -->
-                                <div class="col-lg-4 col-md-6 fade-in">
-                                    <div class="card program-card h-100">
-                                        <div class="card-header text-center">
-                                            <div class="feature-icon">
-                                                <i class="fas fa-heart"></i>
-                                            </div>
-                                            <h4 class="mb-0">Individual & Family Therapy</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="custom-list">
-                                                <li>Individual and Family Therapy with a trauma informed licensed mental health professional</li>
-                                                <li>Culturally knowledgeable Substance Use disorder counseling with a certified substance use professional</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Motherhood and Fatherhood is Sacred -->
-                                <div class="col-lg-4 col-md-6 fade-in">
-                                    <div class="card program-card h-100">
-                                        <div class="card-header text-center">
-                                            <div class="feature-icon">
-                                                <i class="fas fa-users"></i>
-                                            </div>
-                                            <h4 class="mb-0">Motherhood & Fatherhood is Sacred</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="custom-list">
-                                                <li>Culturally Centered Parenting Courses</li>
-                                                <li>Wellbriety Groups</li>
-                                                <li>Talking Circles</li>
-                                                <li>A Graduation Ceremony will convene upon completion of 12 week courses</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Red Road Talking Circle -->
-                                <div class="col-lg-4 col-md-6 fade-in">
-                                    <div class="card program-card h-100">
-                                        <div class="card-header text-center">
-                                            <div class="feature-icon">
-                                                <i class="fas fa-circle"></i>
-                                            </div>
-                                            <h4 class="mb-0">Red Road Talking Circle</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <ul class="custom-list">
-                                                <li>Culturally Centered Parenting Courses</li>
-                                                <li>Wellbriety Groups</li>
-                                                <li>Talking Circles</li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    <h2 class="section-title fade-in">Annual Conferences</h2>
+                                    <p class="section-subtitle fade-in">Transformative gatherings fostering healing, empowerment, and cultural connection</p>
                                 </div>
                             </div>
 
-                            <!-- Registration Information -->
-                            <div class="row mt-5">
-                                <div class="col-lg-10 mx-auto fade-in">
-                                    <div class="contact-info">
-                                        <h3 class="text-center mb-4" style="color: var(--primary-color);">How to Register for Our Program</h3>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <p><i class="fas fa-phone icon"></i><strong>Call:</strong> 916-910-7663</p>
-                                                <p><i class="fas fa-envelope icon"></i><strong>Email:</strong> info@nativedadsnetwork.org</p>
-                                                <p>To become a participant in the NDN Wellness Program contact our office. You will be asked to provide registration information.</p>
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <p><i class="fas fa-clipboard-list icon"></i><strong>Requirements:</strong></p>
-                                                <ul class="custom-list small">
-                                                    <li>Tribal enrollment/membership or documentation showing descendancy from an enrolled tribal member (descendants can link back two generations)</li>
-                                                    <li>Intake and screening assessment to determine eligibility and appropriateness</li>
-                                                    <li>Program Participation Agreement signature ensuring understanding of expectations</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- Youth Programming Section -->
-            <div class="container">
-                <section id="youth" class="youth-section">
-                    <div class="py-5">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 text-center mb-5">
-                                    <h2 class="display-5 text-white fade-in">Youth Programming</h2>
-                                    <p class="lead text-white-90 fade-in">Empowering the next generation through cultural identity and leadership development</p>
-                                </div>
-                            </div>
-
-                            <!-- IMPACTT Program -->
-                            <div class="row align-items-center mb-5">
-                                <div class="col-lg-6 fade-in">
-                                    <div class="card program-card">
-                                        <div class="card-body">
-                                            <h3 class="card-title text-accent">IMPACTT</h3>
-                                            <p class="card-subtitle mb-3 text-muted">Indigenous Mentors Protecting Ancestral Cultural Teachings Team</p>
-                                            <p><strong>Purpose:</strong> Create a safe place for tribal youth, amplify their voices, and nurture the next generation of leaders by grounding them in cultural and spiritual traditions and beliefs.</p>
-                                            <p><strong>Goal:</strong> We actively collaborate with youth, hosting workshops aimed at reestablishing their traditional identity and equipping them with the tools to become advocates for creating positive change within their communities.</p>
-                                            <p><strong>What we do:</strong> Rooted in culture, spirituality, and ceremonial practices, IMPACTT functions as a youth prevention program that nurtures the growth of future leaders through workshops, listening sessions, and traditional teachings.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 fade-in">
-                                    <div class="row g-3">
-                                        <div class="col-6">
-                                            <div class="stats-card">
-                                                <div class="stats-number">20+</div>
-                                                <p class="stats-text mb-0">Tribes Represented</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="stats-card">
-                                                <div class="stats-number">65%</div>
-                                                <p class="stats-text mb-0">Female Participants</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="stats-card">
-                                                <div class="stats-number">20%</div>
-                                                <p class="stats-text mb-0">Youth Ages 14-25</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="stats-card">
-                                                <div class="stats-number">4.7/5</div>
-                                                <p class="stats-text mb-0">Quality Rating</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mural Projects -->
                             <div class="row mb-5">
                                 <div class="col-lg-12">
-                                    <h3 class="text-white text-center mb-4 fade-in">Featured Mural Projects</h3>
-                                    <p class="text-center text-white-90 mb-4 fade-in">IMPACTT has completed 3 mural projects in Yolo and Sacramento county. Each project included 5 weeks of workshops, where youth ages 14-18 learned, designed, and painted murals representing original Patwin, Miwok and Nisenan culture, ceremonial and traditional lifeways. Through collaborations with Hope Through Art, we continue to promote change within public school systems.</p>
-                                </div>
-                                <div class="col-lg-4 mb-4 fade-in">
-                                    <div class="mural-gallery">
-                                        <img src="img/mural-project/mural1.jpg" class="img-fluid" alt="Douglass Middle School Mural">
-                                        <div class="overlay">
-                                            <h5>Douglass Middle School - Woodland USD</h5>
-                                            <p class="small mb-0">5-week workshop program representing original Patwin culture and ceremonial practices</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 mb-4 fade-in">
-                                    <div class="mural-gallery">
-                                        <img src="img/2024/05/twin-rivers-mural.png" class="img-fluid" alt="Twin Rivers Mural">
-                                        <div class="overlay">
-                                            <h5>Grant High School - Twin Rivers USD</h5>
-                                            <p class="small mb-0">Summer school program with 15 youth representing Miwok/Nisenan culture</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 mb-4 fade-in">
-                                    <div class="mural-gallery">
-                                        <img src="img/2024/05/miwok-school-mural.jpg" class="img-fluid" alt="Miwok Middle School Mural">
-                                        <div class="overlay">
-                                            <h5>Miwok Middle School - Sacramento City USD</h5>
-                                            <p class="small mb-0">Historical significance project commemorating the name change from Sutter Middle School</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                                                        <!-- 6 Week Wellness Wednesday Workshops -->
-                            <div class="row mb-5">
-                                <div class="col-lg-6 fade-in">
                                     <div class="card program-card h-100">
                                         <div class="card-header">
                                             <div class="feature-icon">
-                                                <i class="fas fa-calendar-week"></i>
+                                                <i class="fas fa-ribbon"></i>
                                             </div>
-                                            <h4 class="text-center mb-0">6 Week Wellness Wednesday Workshops</h4>
+                                            <h4 class="text-center mb-0">Boys with Braids Conference</h4>
                                         </div>
                                         <div class="card-body">
-                                            <p class="mb-4">A comprehensive 6-week series of classes offering cultural education and skills development for Native youth.</p>
+                                            <p class="mb-4">A culturally significant event empowering Native American youth, particularly boys, by celebrating the importance of long hair in Indigenous traditions while addressing racial harassment.</p>
                                             
-                                            <h6 class="text-accent">🎨 Activities Include:</h6>
-                                            <ul class="custom-list">
-                                                <li>Cultural education sessions</li>
-                                                <li>Arts and crafts activities such as necklace making</li>
-                                                <li>Traditional hand games</li>
-                                                <li>Talking circles for community connection</li>
-                                                <li>Skills development and leadership training</li>
-                                            </ul>
-
-                                            <h6 class="text-accent mt-4">🏞️ Summer Program Highlights:</h6>
-                                            <ul class="custom-list">
-                                                <li>Guided youth river rafting adventures</li>
-                                                <li>Introduction to ancestral Waupumne village in Coloma, CA</li>
-                                                <li>Educational experiences along the American River</li>
-                                                <li>Connection to traditional lifeways and cultural practices</li>
-                                            </ul>
-
-                                            <p class="mt-3"><em>Participants gain practical skills they can utilize in their daily lives while strengthening their cultural identity and community connections.</em></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Next Gen Youth Conference -->
-                                <div class="col-lg-6 fade-in">
-                                    <div class="card program-card h-100">
-                                        <div class="card-header">
-                                            <div class="feature-icon">
-                                                <i class="fas fa-users-cog"></i>
-                                            </div>
-                                            <h4 class="text-center mb-0">Next Gen Youth Conference</h4>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="text-center mb-4">
-                                                <h5 class="text-accent">📍 Sacramento, California</h5>
-                                                <p class="mb-0"><strong>Annual Event</strong> - Planned by and for Native youth</p>
-                                            </div>
-
                                             <h6 class="text-accent">🎯 Purpose & Goals:</h6>
                                             <ul class="custom-list">
-                                                <li><strong>Empower Native Youth:</strong> Provide tools and inspiration for youth to become leaders in their communities</li>
-                                                <li><strong>Cultural Connection:</strong> Strengthen ties to Indigenous heritage through workshops and activities</li>
-                                                <li><strong>Community Engagement:</strong> Encourage active participation in community initiatives and discussions</li>
+                                                <li><strong>Cultural Education:</strong> Teach the sacredness of long hair and its significance in Native traditions</li>
+                                                <li><strong>Empowerment:</strong> Foster pride in cultural identity among Native youth</li>
+                                                <li><strong>Awareness:</strong> Address and combat racial harassment related to cultural practices</li>
                                             </ul>
 
-                                            <h6 class="text-accent mt-4">🌟 Recent Conference Highlights:</h6>
+                                            <h6 class="text-accent mt-4">🌟 Featured Speakers:</h6>
                                             <ul class="custom-list">
-                                                <li><strong>Keynote Speaker:</strong> Alaqua Cox (Marvel's Echo star) shared her personal journey, emphasizing resilience and support</li>
-                                                <li><strong>Workshops:</strong> Sessions on healing from ACEs, stress management, and herbalism as cultural healing</li>
-                                                <li><strong>Youth Ambassadors:</strong> Created Spotify playlist featuring Native artists and booklist highlighting Native authors</li>
+                                                <li><strong>Dallas Goldtooth:</strong> Native American actor, comedian, writer, and environmental activist (Reservation Dogs, 1491s comedy group)</li>
+                                                <li><strong>Kauchani Bratt:</strong> Respected community leader and advocate for Indigenous youth empowerment</li>
+                                                <li><strong>Michael Linklater:</strong> Founder of Boys with Braids movement, professional basketball player and motivational speaker</li>
                                             </ul>
 
-                                            <h6 class="text-accent mt-4">🤝 Community Impact:</h6>
-                                            <p class="mb-0">The conference serves as a platform for Native youth to connect, share experiences, and build supportive networks. By centering youth voices and Indigenous knowledge, the event fosters pride and purpose among participants.</p>
+                                            <h6 class="text-accent mt-4">Interactive Activities:</h6>
+                                            <ul class="custom-list">
+                                                <li>Braid contests and cultural workshops</li>
+                                                <li>Community engagement opportunities</li>
+                                                <li>Youth connection and experience sharing</li>
+                                            </ul>
+
+                                            <p class="mt-3"><em>The conference serves as a platform for Native youth to embrace their heritage, learn about cultural significance, and build supportive communities that respect Indigenous values.</em></p>
                                         </div>
                                     </div>
                                 </div>
@@ -924,204 +713,62 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
 
-            <!-- Conferences Section -->
-          <div class="container">
-            <section id="conferences" class="section-wrapper">
-                <div class="py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center mb-5">
-                                <h2 class="section-title fade-in">Annual Conferences</h2>
-                                <p class="section-subtitle fade-in">Transformative gatherings fostering healing, empowerment, and cultural connection</p>
-                            </div>
-                        </div>
-
-                        <div class="row g-4 mb-5">
-                            <!-- Boys with Braids Conference -->
-                            <div class="col-lg-6 fade-in">
-                                <div class="card program-card h-100">
-                                    <div class="card-header">
-                                        <div class="feature-icon">
-                                            <i class="fas fa-ribbon"></i>
-                                        </div>
-                                        <h4 class="text-center mb-0">Boys with Braids Conference</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="mb-4">A culturally significant event empowering Native American youth, particularly boys, by celebrating the importance of long hair in Indigenous traditions while addressing racial harassment.</p>
-                                        
-                                        <h6 class="text-accent">🎯 Purpose & Goals:</h6>
-                                        <ul class="custom-list">
-                                            <li><strong>Cultural Education:</strong> Teach the sacredness of long hair and its significance in Native traditions</li>
-                                            <li><strong>Empowerment:</strong> Foster pride in cultural identity among Native youth</li>
-                                            <li><strong>Awareness:</strong> Address and combat racial harassment related to cultural practices</li>
-                                        </ul>
-
-                                        <h6 class="text-accent mt-4">🌟 Featured Speakers:</h6>
-                                        <ul class="custom-list">
-                                            <li><strong>Dallas Goldtooth:</strong> Native American actor, comedian, writer, and environmental activist (Reservation Dogs, 1491s comedy group)</li>
-                                            <li><strong>Kauchani Bratt:</strong> Respected community leader and advocate for Indigenous youth empowerment</li>
-                                            <li><strong>Michael Linklater:</strong> Founder of Boys with Braids movement, professional basketball player and motivational speaker</li>
-                                        </ul>
-
-                                        <h6 class="text-accent mt-4">Interactive Activities:</h6>
-                                        <ul class="custom-list">
-                                            <li>Braid contests and cultural workshops</li>
-                                            <li>Community engagement opportunities</li>
-                                            <li>Youth connection and experience sharing</li>
-                                        </ul>
-
-                                        <p class="mt-3"><em>The conference serves as a platform for Native youth to embrace their heritage, learn about cultural significance, and build supportive communities that respect Indigenous values.</em></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Wellness Tour -->
-                            <div class="col-lg-6 fade-in">
-                                <div class="card program-card h-100">
-                                    <div class="card-header">
-                                        <div class="feature-icon">
-                                            <i class="fas fa-route"></i>
-                                        </div>
-                                        <h4 class="text-center mb-0">Wellness Tour</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="mb-4">A culturally grounded initiative launched in response to the escalating substance use crisis in Native communities, particularly during the COVID-19 pandemic. From March 2021 to June 2022, the tour reached 11 AIAN tribal communities across California.</p>
-                                        
-                                        <h6 class="text-accent">🎯 Purpose & Goals:</h6>
-                                        <ul class="custom-list">
-                                            <li><strong>Cultural Reconnection:</strong> Utilize Indigenous traditions—song, dance, prayer, and talking circles—to foster healing and resilience</li>
-                                            <li><strong>SUD Prevention:</strong> Educate communities on the dangers of opioids and fentanyl, providing practical tools like naloxone (Narcan) training</li>
-                                            <li><strong>Community Empowerment:</strong> Create sacred spaces for open dialogue, shared experiences, and collective healing</li>
-                                        </ul>
-
-                                        <h6 class="text-accent mt-4">🌟 Key Features:</h6>
-                                        <ul class="custom-list">
-                                            <li><strong>Educational Components:</strong> Lectures on opioid use, adolescent-led skits, and group discussions</li>
-                                            <li><strong>Hands-On Training:</strong> Naloxone and fentanyl test strips training, equipping participants with life-saving skills</li>
-                                            <li><strong>Cultural Activities:</strong> Traditional practices to reinforce cultural identity and community bonds</li>
-                                        </ul>
-
-                                        <h6 class="text-accent mt-4">📍 Notable Stops:</h6>
-                                        <ul class="custom-list small">
-                                            <li>Bishop, CA</li>
-                                            <li>Tule River Reservation</li>
-                                            <li>Pechanga Casino & Resort</li>
-                                            <li>Tuolumne, CA (partnered with Tuolumne Band of Me-Wuk Indians)</li>
-                                        </ul>
-
-                                        <h6 class="text-accent mt-4">📊 Impact Highlights:</h6>
-                                        <ul class="custom-list">
-                                            <li>65.3% female participants, majority aged 36-45</li>
-                                            <li>20+ tribes represented across 11 tours</li>
-                                            <li>92% of participants knew someone who had overdosed</li>
-                                            <li>Quality of life rating: 4.7/5 post-event</li>
-                                            <li>Cultural relevance rating: 4.8/5</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row g-4">
-                            <!-- Healing Together Conference -->
-                            <div class="col-lg-12 fade-in">
-                                <div class="card program-card h-100">
-                                    <div class="card-header">
-                                        <div class="feature-icon">
-                                            <i class="fas fa-hands-helping"></i>
-                                        </div>
-                                        <h4 class="text-center mb-0">Healing Together Conference</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="text-center mb-4">
-                                            <h5 class="text-accent">📅 June 18-20, 2025</h5>
-                                            <p class="mb-0"><strong>Location:</strong> Sky Ute Casino Resort, Ignacio, Colorado</p>
-                                            <p class="text-muted"><strong>Registration:</strong> $425 (includes breakfast and lunch)</p>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <h6 class="text-accent">🌿 Purpose & Themes:</h6>
-                                                <ul class="custom-list">
-                                                    <li>Foster cultural healing through Indigenous traditions and practices</li>
-                                                    <li>Enhance community resilience by addressing intergenerational trauma</li>
-                                                    <li>Promote wellness and leadership among Native youth and families</li>
-                                                    <li>Focus on healthy relationships, workplace wellness, and allyship</li>
-                                                </ul>
-
-                                                <h6 class="text-accent mt-4">🏛️ Conference Activities:</h6>
-                                                <ul class="custom-list">
-                                                    <li>Ceremonies featuring National Wellbriety Drum and Sacred Hoop</li>
-                                                    <li>Hands-on workshops and breakout sessions</li>
-                                                    <li>Evening cultural sharing events</li>
-                                                    <li>"Healing village" offering traditional practices and community support</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h6 class="text-accent">🤝 Collaborating Organizations:</h6>
-                                                <ul class="custom-list small">
-                                                    <li>Native Dads Network</li>
-                                                    <li>White Bison</li>
-                                                    <li>Native Wellness Institute</li>
-                                                    <li>Native American Fatherhood & Families Association</li>
-                                                    <li>American Indian Cancer Foundation</li>
-                                                </ul>
-
-                                                <h6 class="text-accent mt-4">🌟 Community Impact:</h6>
-                                                <ul class="custom-list">
-                                                    <li>Reconnecting with cultural identities</li>
-                                                    <li>Building supportive community networks</li>
-                                                    <li>Gaining tools for personal and communal healing</li>
-                                                </ul>
-
-                                                <p class="mt-3"><em>Participants have reported transformative experiences, highlighting the conference's role in creating lasting positive change within Indigenous communities.</em></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-            <!-- Contact Section -->
-            <div class="container">
-                <section id="contact" class="section-wrapper">
-                    <div class="py-5">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-10 mx-auto text-center">
-                                    <h2 class="section-title fade-in">Get Involved</h2>
-                                    <p class="section-subtitle fade-in">Join us in healing generational trauma and empowering Native communities</p>
-                                    
-                                    <div class="row g-4">
-                                        <div class="col-md-4 fade-in">
+                            <div class="row g-4">
+                                <!-- Healing Together Conference -->
+                                <div class="col-lg-12 fade-in">
+                                    <div class="card program-card h-100">
+                                        <div class="card-header">
                                             <div class="feature-icon">
-                                                <i class="fas fa-phone"></i>
+                                                <i class="fas fa-hands-helping"></i>
                                             </div>
-                                            <h5>Call Us</h5>
-                                            <p><a href="tel:916-910-7663" class="text-decoration-none text-accent">916-910-7663</a></p>
+                                            <h4 class="text-center mb-0">Healing Together Conference</h4>
                                         </div>
-                                        <div class="col-md-4 fade-in">
-                                            <div class="feature-icon">
-                                                <i class="fas fa-envelope"></i>
+                                        <div class="card-body">
+                                            <div class="text-center mb-4">
+                                                <h5 class="text-accent">📅 June 18-20, 2025</h5>
+                                                <p class="mb-0"><strong>Location:</strong> Sky Ute Casino Resort, Ignacio, Colorado</p>
+                                                <p class="text-muted"><strong>Registration:</strong> $425 (includes breakfast and lunch)</p>
                                             </div>
-                                            <h5>Email Us</h5>
-                                            <p><a href="mailto:info@nativedadsnetwork.org" class="text-decoration-none text-accent">info@nativedadsnetwork.org</a></p>
-                                        </div>
-                                        <div class="col-md-4 fade-in">
-                                            <div class="feature-icon">
-                                                <i class="fas fa-map-marker-alt"></i>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6 class="text-accent">🌿 Purpose & Themes:</h6>
+                                                    <ul class="custom-list">
+                                                        <li>Foster cultural healing through Indigenous traditions and practices</li>
+                                                        <li>Enhance community resilience by addressing intergenerational trauma</li>
+                                                        <li>Promote wellness and leadership among Native youth and families</li>
+                                                        <li>Focus on healthy relationships, workplace wellness, and allyship</li>
+                                                    </ul>
+
+                                                    <h6 class="text-accent mt-4">🏛️ Conference Activities:</h6>
+                                                    <ul class="custom-list">
+                                                        <li>Ceremonies featuring National Wellbriety Drum and Sacred Hoop</li>
+                                                        <li>Hands-on workshops and breakout sessions</li>
+                                                        <li>Evening cultural sharing events</li>
+                                                        <li>"Healing village" offering traditional practices and community support</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6 class="text-accent">🤝 Collaborating Organizations:</h6>
+                                                    <ul class="custom-list small">
+                                                        <li>Native Dads Network</li>
+                                                        <li>White Bison</li>
+                                                        <li>Native Wellness Institute</li>
+                                                        <li>Native American Fatherhood & Families Association</li>
+                                                        <li>American Indian Cancer Foundation</li>
+                                                    </ul>
+
+                                                    <h6 class="text-accent mt-4">🌟 Community Impact:</h6>
+                                                    <ul class="custom-list">
+                                                        <li>Reconnecting with cultural identities</li>
+                                                        <li>Building supportive community networks</li>
+                                                        <li>Gaining tools for personal and communal healing</li>
+                                                    </ul>
+
+                                                    <p class="mt-3"><em>Participants have reported transformative experiences, highlighting the conference's role in creating lasting positive change within Indigenous communities.</em></p>
+                                                </div>
                                             </div>
-                                            <h5>Visit Us</h5>
-                                            <p>2151 River Plaza Dr Ste 200<br>Sacramento, CA 95833</p>
                                         </div>
                                     </div>
                                 </div>
