@@ -31,7 +31,6 @@ $(document).ready(function() {
                     <li><a href="executivedirector.html">Executive Director</a></li>
                     <li><a href="director.html">Deputy Director</a></li>
                     <li><a href="executive-assistant.html">Executive Assistant</a></li>
-                    <li><a href="coordinator.html">Program Coordinator</a></li>
                     <li><a href="impactt-coordinator.html">IMPACTT Program Coordinator</a></li>
                     <li><a href="admin-assistant.html">Administrative Assistant</a></li>
                     <li><a href="youth-intern.html">IMPACTT Youth Intern</a></li>
@@ -79,7 +78,6 @@ $(document).ready(function() {
             { url: 'executivedirector.html', title: 'Executive Director' },
             { url: 'director.html', title: 'Deputy Director' },
             { url: 'executive-assistant.html', title: 'Executive Assistant' },
-            { url: 'coordinator.html', title: 'Program Coordinator' },
             { url: 'impactt-coordinator.html', title: 'IMPACTT Program Coordinator' },
             { url: 'admin-assistant.html', title: 'Administrative Assistant' },
             { url: 'youth-intern.html', title: 'IMPACTT Youth Intern' }
