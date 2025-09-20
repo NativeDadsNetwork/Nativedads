@@ -315,6 +315,48 @@ const EVENTS_DATA = {
             "registerUrl": "https://www.facebook.com/NativeDadsNetwork",
             "hasRegistration": true,
             "recurring": true
-        }
-    ]
+        },
+        {
+            "id": "boys-with-braids-sep-2025",
+            "title": "Boys with Braids Regional Conference", 
+            "description": "10 AM - 4 PM",
+            "contact": "info@nativedadsnetwork.org",
+            "startDate": "2025-09-06",
+            "endDate": "2025-09-06",
+            "displayDate": "September 6th, 2025",
+            "time": "10:00 AM - 4:00 PM",
+            "image": "img/2025/09/bwbSep2025.PNG",
+            "registerUrl": "https://sanfranciscoboyswithbraid.rsvpify.com/",
+            "hasRegistration": true,
+            "recurring": false
+        },
+        {
+            "id": "returning-warrior-spirit-2025",
+            "title": "Returning The Warrior Spirit",
+            "description": "October 10th - 12th, 2025",
+            "contact": "info@nativedadsnetwork.org",
+            "startDate": "2025-10-10",
+            "endDate": "2025-10-12",
+            "displayDate": "October 10th - 12th, 2025",
+            "time": "All Day",
+            "image": "img/2025/09/warriorSpirit2025.PNG",
+            "registerUrl": "https://returningthewarriorspirit.rsvpify.com/",
+            "hasRegistration": true,
+            "recurring": false
+        },
+        {
+            "id": "parenting-circle-2025",
+            "title": "Native Dads Network Parenting Circle",
+            "description": "Starting August, 2025 5:30 PM - 7:30 PM",
+            "contact": "info@nativedadsnetwork.org",
+            "startDate": "2025-08-28",
+            "endDate": "2025-12-31",
+            "displayDate": "August 1st - November 20th, 2025",
+            "time": "5:30 PM - 7:30 PM",
+            "image": "img/2025/09/ParentingClass.PNG",
+            "registerUrl": "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdnIGlQt8rFec8WHmcpy8bZpUyGpsRYqiVPlp1xj1zBleLAZQ/viewform?usp=send_form&pli=1",
+            "hasRegistration": true,
+            "recurring": true
+        },
+    ],
 };
